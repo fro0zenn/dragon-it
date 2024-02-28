@@ -1,0 +1,30 @@
+.user-list {
+  margin-top: 50px;
+}
+
+.user-list h2 {
+  margin-bottom: 20px;
+}
+
+.user-list p {
+  font-style: italic;
+  color: #888;
+}
+
+.user-list ul {
+  list-style: none;
+  padding: 0;
+  counter-reset: list-counter;
+}
+
+.user-list li {
+  margin-bottom: 20px;
+  counter-increment: list-counter;
+  word-break: break-word;
+}
+
+.user-list li:before {
+  content: counter(list-counter) ".";;
+  margin-right: 10px;
+  font-weight: bold;
+}
